@@ -1,0 +1,5 @@
+git init
+git remote add origin https://github.com/yousseftarekkh/T17-Sprint0Indv
+git add AboutVersionControl BranchesInANutshell DistributedWorkflows
+git commit -m "Three empty files for specific book sections and AllMyCommands.txt"
+git push origin master

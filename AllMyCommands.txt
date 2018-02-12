@@ -1,5 +1,23 @@
 git init
 git remote add origin https://github.com/yousseftarekkh/T17-Sprint0Indv
-git add AboutVersionControl BranchesInANutshell DistributedWorkflows
-git commit -m "Three empty files for specific book sections and AllMyCommands.txt"
+git add AboutVersionControl.txt BranchesInANutshell.txt DistributedWorkflows.txt
+git commit -m "AboutVersionControl, BranchesInANutshell, DistributedWorkflows text files with content added"
+git rm --cached BranchesInANutshell.txt
+git commit -m "BranchesInANutshell.txt removed, not cached"
+git reset HEAD^
+git checkout -- BranchesInANutshell.txt
+git push origin master
+git checkout -b ReadMe
+touch README.md
+git add README.md
+git commit -m "README.md styled and added"
+git push origin ReadMe
+git checkout master
+git merge ReadMe
+git push origin master
+git add AllMyCommands.txt
+git commit -m "AllMyCommands.txt added with all the used commands since the creation of this repository"
+git push origin master
+git add AllMyCommands.txt
+git commit -m "AllMyCommands.txt updated"
 git push origin master
